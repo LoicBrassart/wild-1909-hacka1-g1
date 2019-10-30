@@ -1,0 +1,23 @@
+.movie-poster-title {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto 2% auto;
+  max-width: 80vw;
+  width: 15vw;
+  img {
+    width: 14vw;
+    height: 18vw;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  h2 {
+    color: red;
+    font-size: 1em;
+  }
+  :hover {
+    cursor: pointer;
+    filter: blur((1px));
+  }
+}
