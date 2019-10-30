@@ -1,0 +1,30 @@
+footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: #f6172c;
+  font-family: Creepster-Regular;
+  font-size: 28px;
+
+  .link {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 0 20px;
+    }
+  }
+
+  .social {
+    display: flex;
+
+    img {
+      margin-left: 20px;
+    }
+  }
+}
