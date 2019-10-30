@@ -17,6 +17,11 @@ footer {
 
     li {
       margin: 0 20px;
+      transform: scale(0.9);
+    }
+
+    li:hover {
+      transform: scale(1);
     }
   }
 
@@ -25,6 +30,11 @@ footer {
 
     img {
       margin-left: 20px;
+      transform: scale(0.9);
+    }
+
+    img:hover {
+      transform: scale(1);
     }
   }
 }
