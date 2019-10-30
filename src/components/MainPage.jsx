@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainPage.scss";
 import Axios from "axios";
+import MovieCard from "./MovieCard";
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -14,14 +15,14 @@ class MainPage extends React.Component {
     this.ApiCallHackloween();
   }
 
-  ApiCallHackloween() {
+  ApiCallHackloween = () => {
     Axios.get("https://hackathon-wild-hackoween.herokuapp.com/movies").then(
-      responce => {
-        const movies = responce.data;
+      response => {
+        const movies = response.data.movies;
         this.setState({ movies });
       }
     );
-  }
+  };
 
   render() {
     return (
@@ -33,6 +34,9 @@ class MainPage extends React.Component {
           muted
           autoPlay
         ></video>
+        {this.state.movies.map(movie => (
+          <MovieCard title={movie.title} poster={movie.posterUrl} />
+        ))}
       </div>
     );
   }
