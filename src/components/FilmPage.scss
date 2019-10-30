@@ -1,0 +1,25 @@
+.film {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .film-div {
+    width: 60%;
+    display: flex;
+  }
+  .card-info {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+    > * {
+      margin: 15px 0;
+    }
+    button {
+      width: 20%;
+    }
+  }
+}
