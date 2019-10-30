@@ -28,4 +28,14 @@
     width: 70vw;
     margin: 200px auto 80px auto;
   }
+  .hidden {
+    display: none;
+  }
+  #screamer-pic {
+    position: fixed;
+    width: 50vw;
+    height: 50vw;
+    top: 0;
+    left: 300px;
+  }
 }
