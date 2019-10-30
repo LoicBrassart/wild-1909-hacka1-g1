@@ -20,9 +20,24 @@ class Footer extends React.Component {
         </div>
 
         <div className="social">
-          <img src="facebook.png" className="fcb" alt="Facebook logo" />
-          <img src="instagram.png" className="insta" alt="Insta logo" />
-          <img src="twitter.png" className="twitter" alt="Twitter logo" />
+          <a
+            title="BigDaddyFcb"
+            href="https://www.facebook.com/profile.php?id=100023861071017"
+          >
+            <img src="facebook.png" className="fcb" alt="Facebook logo" />
+          </a>
+          <a
+            title="BigDaddyInsta"
+            href="https://www.instagram.com/therealcharlesmanson/"
+          >
+            <img src="instagram.png" className="insta" alt="Insta logo" />
+          </a>
+          <a
+            title="BigdaddyTwitter"
+            href="https://twitter.com/heltershelter?lang=fr"
+          >
+            <img src="twitter.png" className="twitter" alt="Twitter logo" />
+          </a>
         </div>
       </footer>
     );
