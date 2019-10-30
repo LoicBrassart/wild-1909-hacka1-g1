@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Creepster&display=swap");
 
 .NavBar {
+  position: fixed;
+  width: 100vw;
+  right: 0;
+  top: 0;
   background-color: #f6172c;
   padding: 1%;
   display: flex;
