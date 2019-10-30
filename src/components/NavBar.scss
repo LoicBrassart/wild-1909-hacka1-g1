@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 12vh;
+  height: 15%;
   .title {
     display: flex;
     flex-direction: column;
@@ -44,6 +44,7 @@
     color: white;
     border-color: black;
     height: 3vh;
+    border-radius: 5px;
   }
   .search-png {
     height: 3vh;
