@@ -1,12 +1,11 @@
 ::-webkit-scrollbar {
   background-color: rgba($color: #000000, $alpha: 1);
-  width: 50px;
-  z-index: 0;
+  width: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: url("/thumb.png") no-repeat;
-  background-size: 50px 63px;
+  background-size: 30px;
   display: block;
   background-position: center;
 }
@@ -15,9 +14,9 @@
   .video {
     position: fixed;
     right: 0;
-    bottom: 0;
-    top: 0;
     left: 0;
+    top: O;
+    bottom: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
@@ -27,5 +26,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 70vw;
+    margin: 200px auto 80px auto;
   }
 }
