@@ -34,9 +34,11 @@ class MainPage extends React.Component {
           muted
           autoPlay
         ></video>
-        {this.state.movies.map(movie => (
-          <MovieCard title={movie.title} poster={movie.posterUrl} />
-        ))}
+        <div className="movie-poster-list">
+          {this.state.movies.map(movie => (
+            <MovieCard title={movie.title} poster={movie.posterUrl} />
+          ))}
+        </div>
       </div>
     );
   }

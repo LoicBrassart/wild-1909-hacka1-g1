@@ -10,3 +10,13 @@
     z-index: -1;
   }
 }
+
+.main {
+  .movie-poster-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: 5% auto 0 auto;
+  }
+}
