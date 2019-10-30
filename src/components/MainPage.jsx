@@ -7,7 +7,7 @@ class MainPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movies: []
+      movies: null
     };
   }
 
@@ -27,20 +27,20 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="main">
-        <video
-          className="video"
-          src="background-video.mp4"
-          loop
-          muted
-          autoPlay
-        ></video>
+        <div className="video">
+          <video src="background-video.mp4" loop muted autoPlay></video>
+        </div>
         <div className="movie-poster-list">
-          {this.state.movies.map(movie => (
-            <MovieCard
-              title={movie.title.replace(/_/g, " ")}
-              poster={movie.posterUrl}
-            />
-          ))}
+          {this.state.movies ? (
+            this.state.movies.map(movie => (
+              <MovieCard
+                title={movie.title.replace(/_/g, " ")}
+                poster={movie.posterUrl}
+              />
+            ))
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
       </div>
     );

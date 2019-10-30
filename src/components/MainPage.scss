@@ -11,11 +11,11 @@
 }
 
 .main {
-  .video {
+  .video video {
     position: fixed;
     right: 0;
     left: 0;
-    top: O;
+    top: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
@@ -27,5 +27,13 @@
     flex-wrap: wrap;
     width: 70vw;
     margin: 150px auto 80px auto;
+    p {
+      position: absolute;
+      top: 45%;
+      left: 40%;
+      font-size: 60px;
+      color: red;
+      background-color: black;
+    }
   }
 }
