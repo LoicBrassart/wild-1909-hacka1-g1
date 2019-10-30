@@ -1,6 +1,9 @@
 .NavBar {
   background-color: #f6172c;
   padding: 1%;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .NavbarComponents {
   display: flex;
