@@ -7,40 +7,41 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 8vh;
+  height: 12vh;
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .strong-title {
+    font-size: 3em;
+  }
   h1 {
     font-family: "Creepster", cursive;
   }
   p {
     font-family: "Creepster", cursive;
-    font-size: 25px;
+    font-size: 2em;
+  }
+  p:hover {
+    transform: scale(1.1);
   }
   img {
     height: 6vh;
   }
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   input {
     background-color: black;
     color: white;
+    border-color: black;
+    height: 3vh;
   }
-}
-
-.NavbarComponents {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: space-between;
-  align-items: center;
-}
-.SearchBar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  input {
-    background-color: black;
-    border: none;
-    color: red;
+  .search-png {
+    height: 3vh;
   }
-}
-.SearchInput {
-  margin-right: 1%;
 }
