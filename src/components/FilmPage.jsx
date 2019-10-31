@@ -21,7 +21,7 @@ class FilmPage extends React.Component {
   }
 
   coolFunction() {
-    const scream = new Audio("scream1.mp3");
+    const scream = new Audio("/scream1.mp3");
     scream.play();
   }
 
@@ -48,10 +48,9 @@ class FilmPage extends React.Component {
             <img src={this.state.movie.posterUrl} alt={this.state.title} />
           </div>
           <div className="card-info">
-            <h1>{this.state.movie.title.replace(/_/g, " ")}</h1>
+            <h2>{this.state.movie.title.replace(/_/g, " ")}</h2>
             <director>{this.state.movie.director.replace(/_/g, " ")}</director>
-            <p>description</p>
-            <button onClick={() => this.coolFunction()}>i like this one</button>
+            <button onClick={() => this.handleClick()}>I like this one</button>
           </div>
         </div>
       </figure>
