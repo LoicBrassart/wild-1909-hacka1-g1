@@ -10,12 +10,16 @@
   background-position: center;
 }
 
+html {
+  cursor: url(/axe.png), pointer;
+}
+
 .main {
   .video {
     position: fixed;
     right: 0;
     left: 0;
-    top: O;
+    top: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
