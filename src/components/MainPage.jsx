@@ -7,13 +7,23 @@ class MainPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      visibleScreamer: false
       movies: null,
-      canMusic: true
     };
   }
 
   componentDidMount() {
     this.ApiCallHackloween();
+    setTimeout(() => {
+      this.setState({
+        visibleScreamer: true
+      });
+    }, 4000);
+    setTimeout(() => {
+      this.setState({
+        visibleScreamer: false
+      });
+    }, 6350);
   }
 
   ApiCallHackloween = () => {
@@ -44,6 +54,12 @@ class MainPage extends React.Component {
             <p>Loading</p>
           )}
         </div>
+        <img
+          id="screamer-pic"
+          className={this.state.visibleScreamer ? "" : "hidden"}
+          src="https://media.giphy.com/media/hD5EEkQyiEY1O/giphy.gif"
+          alt="the ring"
+        />
       </div>
     );
   }

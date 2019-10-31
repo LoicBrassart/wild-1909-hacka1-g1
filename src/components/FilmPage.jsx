@@ -32,6 +32,7 @@ class FilmPage extends React.Component {
         this.coolFunction();
         break;
       case 2:
+        alert("who cares ?");
         break;
       case 3:
         break;

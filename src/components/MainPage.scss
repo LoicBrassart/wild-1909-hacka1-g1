@@ -10,6 +10,10 @@
   background-position: center;
 }
 
+html {
+  cursor: url(/axe.png), pointer;
+}
+
 .main {
   .video video {
     position: fixed;
@@ -35,5 +39,15 @@
       color: red;
       background-color: black;
     }
+  }
+  .hidden {
+    display: none;
+  }
+  #screamer-pic {
+    position: fixed;
+    width: 50vw;
+    height: 50vw;
+    top: 0;
+    left: 300px;
   }
 }
