@@ -18,10 +18,14 @@ footer {
     li {
       margin: 0 20px;
       transform: scale(0.9);
+      cursor: url(/axe.png), pointer;
     }
 
     li:hover {
       transform: scale(1);
+    }
+    a {
+      cursor: url(/axe.png), pointer;
     }
     a:hover {
       cursor: url(/axe.png), pointer;
@@ -33,12 +37,16 @@ footer {
 
   .social {
     display: flex;
+    a {
+      cursor: url(/axe.png), pointer;
+    }
     a:hover {
       cursor: url(/axe.png), pointer;
     }
     img {
       padding-left: 20px;
       transform: scale(0.9);
+      cursor: url(/axe.png), pointer;
     }
 
     img:hover {
@@ -46,8 +54,4 @@ footer {
       cursor: url(/axe.png), pointer;
     }
   }
-}
-
-.social:hover {
-  cursor: url(/axe.png), pointer;
 }
