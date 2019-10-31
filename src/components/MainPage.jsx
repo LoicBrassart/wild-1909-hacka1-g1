@@ -7,8 +7,8 @@ class MainPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movies: null,
-      canMusic: true
+      visibleScreamer: false,
+      movies: null
     };
   }
 

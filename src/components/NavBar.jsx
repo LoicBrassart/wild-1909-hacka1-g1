@@ -14,11 +14,11 @@ function NavBar() {
       </Link>
       <p>MA LISTE</p>
       <div className="search-bar">
-        <input type="search" value="TU VAS CREUVER!!!" />
-        <img className="search-png" src="search.png" alt="loupe" />
+        <input type="search" value="" />
+        <img className="search-png" src="/search.png" alt="loupe" />
       </div>
 
-      <img src="mask.png" />
+      <img src="/mask.png" />
     </div>
   );
 }
