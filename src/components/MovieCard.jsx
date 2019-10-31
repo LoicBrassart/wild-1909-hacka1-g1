@@ -1,17 +1,27 @@
 import React from "react";
-import "./MovieCard.css";
+import "./MovieCard.scss";
+import { Link } from "react-router-dom";
 
-function MovieCard(props) {
-  return (
-    <div className="movie-poster-title">
-      <img
-        className="single-movie-poster"
-        src={props.poster}
-        alt={props.title}
-      />
-      <h2>{props.title}</h2>
-    </div>
-  );
+class MovieCard extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="movie-poster-title">
+        <Link to={`/movie/${this.props.id}`}>
+          <img
+            id={this.props.id}
+            className="single-movie-poster"
+            src={this.props.poster}
+            alt={this.props.title}
+          />
+        </Link>
+        <h2>{this.props.title}</h2>
+      </div>
+    );
+  }
 }
 
 export default MovieCard;
