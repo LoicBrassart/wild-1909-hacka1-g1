@@ -51,13 +51,7 @@ class FilmPage extends React.Component {
             <h1>{this.state.movie.title.replace(/_/g, " ")}</h1>
             <director>{this.state.movie.director.replace(/_/g, " ")}</director>
             <p>description</p>
-            <button
-              onClick={() => {
-                this.handleClick();
-              }}
-            >
-              i like this one
-            </button>
+            <button onClick={() => this.coolFunction()}>i like this one</button>
           </div>
         </div>
       </figure>

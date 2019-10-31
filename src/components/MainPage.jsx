@@ -35,6 +35,7 @@ class MainPage extends React.Component {
           {this.state.movies ? (
             this.state.movies.map(movie => (
               <MovieCard
+                id={movie.id}
                 title={movie.title.replace(/_/g, " ")}
                 poster={movie.posterUrl}
               />
