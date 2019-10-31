@@ -19,5 +19,6 @@
   :hover {
     cursor: pointer;
     filter: blur((1px));
+    z-index: 1;
   }
 }
