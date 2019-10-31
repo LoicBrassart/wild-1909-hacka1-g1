@@ -8,15 +8,15 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/FilmPage" component={FilmPage} />
           <Route path="/movie/:id" component={FilmPage} />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

@@ -20,6 +20,26 @@ class FilmPage extends React.Component {
     });
   }
 
+  coolFunction() {
+    const scream = new Audio("scream1.mp3");
+    scream.play();
+  }
+
+  handleClick() {
+    let dice = Math.floor(Math.random() * Math.floor(4));
+    switch (dice) {
+      case 1:
+        this.coolFunction();
+        break;
+      case 2:
+        break;
+      case 3:
+        break;
+      default:
+        return;
+    }
+  }
+
   render() {
     return this.state.loading ? (
       <figure className="film">
@@ -31,7 +51,13 @@ class FilmPage extends React.Component {
             <h1>{this.state.movie.title.replace(/_/g, " ")}</h1>
             <director>{this.state.movie.director.replace(/_/g, " ")}</director>
             <p>description</p>
-            <button>i like this one</button>
+            <button
+              onClick={() => {
+                this.handleClick();
+              }}
+            >
+              i like this one
+            </button>
           </div>
         </div>
       </figure>
