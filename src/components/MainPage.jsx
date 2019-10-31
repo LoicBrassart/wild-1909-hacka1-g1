@@ -7,8 +7,8 @@ class MainPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      visibleScreamer: false
-      movies: null,
+      visibleScreamer: false,
+      movies: null
     };
   }
 
@@ -18,12 +18,18 @@ class MainPage extends React.Component {
       this.setState({
         visibleScreamer: true
       });
+      this.playSound();
     }, 4000);
     setTimeout(() => {
       this.setState({
         visibleScreamer: false
       });
     }, 6350);
+  }
+
+  playSound() {
+    const scream = new Audio("/scream1.mp3");
+    scream.play();
   }
 
   ApiCallHackloween = () => {

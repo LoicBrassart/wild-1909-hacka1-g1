@@ -36,7 +36,7 @@ html {
       top: 45%;
       left: 45%;
       font-size: 60px;
-      color: red;
+      color: #f6172c;
       background-color: black;
     }
   }
@@ -49,5 +49,6 @@ html {
     height: 50vw;
     top: 0;
     left: 300px;
+    z-index: 0;
   }
 }

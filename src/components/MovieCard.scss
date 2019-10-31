@@ -13,8 +13,12 @@
     border-radius: 10px;
   }
   h2 {
-    color: red;
-    font-size: 1em;
+    font-family: "Eater", cursive;
+    color: #f6172c;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px,
+      #000000 2px -2px;
   }
   :hover {
     cursor: pointer;
