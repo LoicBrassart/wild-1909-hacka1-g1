@@ -19,12 +19,12 @@ class MainPage extends React.Component {
         visibleScreamer: true
       });
       this.playSound();
-    }, 4000);
+    }, 6000);
     setTimeout(() => {
       this.setState({
         visibleScreamer: false
       });
-    }, 6350);
+    }, 8000);
   }
 
   playSound() {
