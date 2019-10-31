@@ -23,18 +23,31 @@ footer {
     li:hover {
       transform: scale(1);
     }
+    a:hover {
+      cursor: url(/axe.png), pointer;
+    }
+    img:hover {
+      cursor: url(/axe.png), pointer;
+    }
   }
 
   .social {
     display: flex;
-
+    a:hover {
+      cursor: url(/axe.png), pointer;
+    }
     img {
-      margin-left: 20px;
+      padding-left: 20px;
       transform: scale(0.9);
     }
 
     img:hover {
       transform: scale(1);
+      cursor: url(/axe.png), pointer;
     }
   }
+}
+
+.social:hover {
+  cursor: url(/axe.png), pointer;
 }

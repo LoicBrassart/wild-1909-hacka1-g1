@@ -12,6 +12,9 @@
     overflow: hidden;
     border-radius: 10px;
   }
+  img:hover {
+    cursor: url(/axe.png), pointer;
+  }
   h2 {
     font-family: "Eater", cursive;
     color: #f6172c;
@@ -21,7 +24,6 @@
       #000000 2px -2px;
   }
   :hover {
-    cursor: pointer;
     filter: blur((1px));
     z-index: 1;
   }

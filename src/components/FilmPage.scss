@@ -36,5 +36,8 @@
     button:hover {
       transform: scale(1);
     }
+    button:hover {
+      cursor: url(/axe.png), pointer;
+    }
   }
 }
